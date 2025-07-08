@@ -1,4 +1,10 @@
-# 📌 Project Documentation
+# Online Retail Project Documentation
+
+
+## Project Overview
+<img src = "Dashboard%20Img/Project%20Overview.png"/>
+
+---
 
 ## 🛠 Project Tools
 - **Snowflake Cloud Warehouse** – Data storage & warehouse
@@ -83,6 +89,11 @@ Connected Power BI directly to Mart schema.
 
 ---
 
+## Data Modeling
+<img src="Dashboard%20Img/data%20model.png"/>
+
+---
+
 ### ✅ Completed Orders Dashboard
 - **KPIs:**
   - Number of Customers
@@ -97,6 +108,8 @@ Connected Power BI directly to Mart schema.
     - Total sales by country
     - Top 5 products per country (tooltip)
     - Unique products sold, total quantity per country
+
+<img src="Dashboard%20Img/Completed%20Orders.png"/>
 
 ---
 
@@ -115,6 +128,8 @@ Connected Power BI directly to Mart schema.
     - Top 5 returned products per country (tooltip)
     - Unique returned products, total units returned
 
+<img src="Dashboard%20Img/Cancelled%20orders.png"/>
+
 ---
 
 ### 📦 RFM Analysis Dashboard
@@ -129,6 +144,8 @@ Connected Power BI directly to Mart schema.
   - Histogram (Customer distribution by Recency)
   - Histogram (Distribution by RFM Score)
 
+<img src="Dashboard%20Img/RFM%20analysis.png"/>
+
 ---
 
 ### 🧭 Customer Distribution Dashboard
@@ -138,14 +155,6 @@ Connected Power BI directly to Mart schema.
   - Histogram (Customer distribution by Monetary)
   - Box plot (Monetary distribution & outliers)
 
----
-
-## ✅ Final Architecture
-
-| Layer  | Content                              |
-|--------|--------------------------------------|
-| Raw    | Original dataset                     |
-| Staging| Cleaned & transformed data           |
-| Mart   | Fact & dimension tables for analysis |
+<img src="Dashboard%20Img/distribution.png"/>
 
 ---
