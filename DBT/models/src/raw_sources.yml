@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw data schema containing the online retail dataset"
+    database: RETAIL_WH  # <-- change this to your actual database name
+    schema: raw
+    tables:
+      - name: ONLINE_RETAIL
+        description: "Raw online retail transactional data loaded from external source"
+        columns:
+          - name: invoiceno
+            description: "Invoice number. Unique per transaction. Starts with 'C' for returns."
+          - name: stockcode
+            description: "Product/item code (can be numeric or alphanumeric)"
+          - name: description
+            description: "Product description"
+          - name: quantity
+            description: "Number of items purchased or returned"
+          - name: invoicedate
+            description: "Date and time of the invosice"
+          - name: unitprice
+            description: "Price per unit of product"
+          - name: customerid
+            description: "Customer identifier. May be null."
+          - name: country
+            description: "Country where the transaction took place"
+  # new Source for Cleaned Data
+  - name: staging
+    tables:
+      - name: online_retail_cleaned
+        description: 'online Retail table it contains cleaned Data'
+        database: RETAIL_WH  # <-- change this to your actual database name
+        schema: staging
